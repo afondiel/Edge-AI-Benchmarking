@@ -162,7 +162,7 @@ Resources for model Deployment:
 
 ## Step 4: Profile and Identify Bottlenecks
 
-![](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/resources/tracing.png?raw=true)
+![](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/resources/torch-profiler.png)
 
 - Credit: ([Link](https://www.youtube.com/watch?v=8Rr_8jy1_GY))
 
