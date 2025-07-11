@@ -162,7 +162,7 @@ Resources for model Deployment:
 
 ## Step 4: Profile and Identify Bottlenecks
 
-![](https://github.com/afondiel/Edge-AI-Model-Zoo/tree/main/resources/torch-profiler.png)
+![](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/resources/tracing.png?raw=true)
 
 - Credit: ([Link](https://www.youtube.com/watch?v=8Rr_8jy1_GY))
 
@@ -305,7 +305,7 @@ Depth counts the number of layers with parameters.
 
 ### Tracing
 
-![](https://github.com/afondiel/Edge-AI-Model-Zoo/tree/main/resources/tracing.png)
+![](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/resources/tracing.png?raw=true)
 
 - Credit: ([Link](https://www.youtube.com/watch?v=8Rr_8jy1_GY))
 
@@ -318,7 +318,7 @@ Use tracing tool to [analyze](https://docs.pytorch.org/tutorials/intermediate/te
 
 ## Step 5: Optimize
 
-![](https://github.com/afondiel/Edge-AI-Model-Zoo/tree/main/resources/edge-ai-opt-triad.png)
+![](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/resources/edge-ai-opt-triad.png?raw=true)
 
 Wang et al. "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies", arXiv pp, [arXiv:2501.03265v1](https://arxiv.org/abs/2501.03265), 2025
 
