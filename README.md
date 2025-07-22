@@ -5,13 +5,13 @@ This guide provides a practical, step-by-step workflow and essential resources f
 ## Table of Contents
 
 - [Benchmarking Workflow](#benchmarking-workflow)
-- [Step 0: Select your Model](#step-0-select-your-model)
-- [Step 1: Prepare and Baseline the Model](#step-1-prepare-and-baseline-the-model)
-- [Step 2: Select your Target Platform](#step-2-select-your-target-platform)
-- [Step 3: Deploy](#step-3-deploy)
-- [Step 4: Profile and Identify Bottlenecks](#step-4-profile-and-identify-bottlenecks)
-- [Step 5: Optimize](#step-5-optimize)
-- [Step 6: Iterate](#step-6-iterate)
+   - [Step 0: Select your Model](#step-0-select-your-model)
+   - [Step 1: Prepare and Baseline the Model](#step-1-prepare-and-baseline-the-model)
+   - [Step 2: Select your Target Platform](#step-2-select-your-target-platform)
+   - [Step 3: Deploy](#step-3-deploy)
+   - [Step 4: Profile and Identify Bottlenecks](#step-4-profile-and-identify-bottlenecks)
+   - [Step 5: Optimize](#step-5-optimize)
+   - [Step 6: Iterate](#step-6-iterate)
 - [Resources](#resources)
 
 ## Benchmarking Workflow
