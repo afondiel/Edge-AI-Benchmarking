@@ -1,13 +1,13 @@
 # Edge AI Benchmarking Guide
 
-This guide offers a practical, step-by-step workflow and resources for benchmarking and profiling your Edge AI system. Quickly identify bottlenecks, scalability challenges, and optimization opportunities to enhance efficiency and accelerate performance.
+This guide provides a practical, step-by-step workflow and essential resources for effectively benchmarking and profiling your Edge AI system. Quickly identify bottlenecks, address scalability challenges, and optimization uncover opportunities to enhance efficiency and accelerate performance.
 
 ## Table of Contents
 
 - [Benchmarking Workflow](#benchmarking-workflow)
-- [Step 0: Select the Model](#step-0-select-the-model)
-- [Step 1: Benchmark the Model's Baseline Performance](#step-1-benchmark-the-models-baseline-performance)
-- [Step 2: Choose Your Target Edge Platform](#step-2-choose-your-target-edge-platform)
+- [Step 0: Select your Model](#step-0-select-your-model)
+- [Step 1: Prepare and Baseline the Model](#step-1-prepare-and-baseline-the-model)
+- [Step 2: Select your Target Platform](#step-2-select-your-target-platform)
 - [Step 3: Deploy](#step-3-deploy)
 - [Step 4: Profile and Identify Bottlenecks](#step-4-profile-and-identify-bottlenecks)
 - [Step 5: Optimize](#step-5-optimize)
@@ -18,13 +18,13 @@ This guide offers a practical, step-by-step workflow and resources for benchmark
 
 ```mermaid
    graph LR
-       A[Select the Model]-->B[Benchmark]
-       B-->C[Select the Platform]
+       A[Select your Model]-->B[Prepare and Baseline]
+       B-->C[Select your Platform]
        C-->D[Deploy]
        D-->E[Profile]
        E-->F[Optimize]
        F-->G[Iterate]
-       G-->A
+       G-->E
 ```
 > [!IMPORTANT]  
 > If you already have your application requirements in hand, make sure to follow along each phase of the workflow.
@@ -32,11 +32,15 @@ This guide offers a practical, step-by-step workflow and resources for benchmark
 > [!NOTE]
 > If the model is already running on your target edge device jump straight to the [step 4](#step-4-profile-and-identify-bottlenecks).
 
-## Step 0: Select the Model
+## Step 0: Select your Model
 
 You have at least a model to begin with, ideally from [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo)
 
-## Step 1: Benchmark the Model's Baseline Performance 
+## Step 1: Prepare and Baseline the Model
+
+Before committing to a specific edge platform and diving into complex optimizations, it's crucial to prepare your model and establish a baseline performance. 
+
+This vital preliminary step helps you gain a fundamental understanding of your model's characteristics and suitability, ultimately saving significant time and effort in later stages
 
 Evaluate your model’s baseline performance based on your application target performance metrics.
 
@@ -123,13 +127,13 @@ def show_predictions(model):
   plt.title(decode_predictions(preds, top=3)[0][0][1])
 ```
 
-## Step 2: Choose Your Target Edge Platform
+## Step 2: Select your Target Platform
 
 Selecting the right edge platform/device is crucial for the overall performance and efficiency of your application (computational demands, environmental conditions, operational constraints, etc.). Please refer to this [resource](https://github.com/afondiel/Edge-AI-Platforms) for more in depth.
 
 
-| **Target Device**                          | **CPU Workloads (%)**      | **AI Processor (GPU/NPU)[^1]**| **Compute (OPS)**  | **Speed (TOPS/s)[^2]**        | **Memory Footprint (RAM/VRAM)**|**Storage usage (SD card/Onboard Flash)**     |**Power (W)**    |**Energy (Wh/J)** |**Efficiency (GOPS/W)[^3]**  |**Temperature (°C)** |
-|--------------------------------------------|----------------------|----------------------------|-----------------------|----------------------------|--------------------------|----------------------------------------|-----------------|-----------------|------------------|---------------------|
+| **Target Device**                          | **CPU (%)**      | **AI Accelerator (GPU/NPU)[^1]**| **Compute (OPS)**  | **Speed (TOPS/s)[^2]**        | **Memory Footprint (RAM/VRAM)**|**Storage usage (SD card/Onboard Flash)**     |**Power (W)**    |**Energy (Wh/J)** |**Efficiency (GOPS/W)[^3]**  |**Temperature (°C)** |
+|:-------------------------------------------|:------------------:|:----------------------------:|:-----------------------:|:----------------------------:|:--------------------------:|:----------------------------------------:|:-----------------:|:-----------------:|:------------------:|:---------------------:|
 | **System on Chips (SoCs)**                 | -                    |  -                         | GFlops                | MHz/GHz                    | MB                       |-                                       |-             |-            |-            |°C                   |               
 | **Microcontrollers (MCUs)**                | -                    |  -                         | GFlops                | MHz                        | KB                       |-                                       |-             |-            |-            |°C                   | 
 | **Field-Programmable Gate Arrays (FPGAs)** | -                    |  -                         | GFlops                | MHz                        | MB                       |-                                       |-             |-            |-            |°C                   |               
