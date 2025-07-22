@@ -40,7 +40,7 @@ You have at least a model to begin with, ideally from [Edge AI Model Zoos](https
 
 Before committing to a specific edge platform and diving into complex optimizations, it's crucial to prepare your model and establish a baseline performance. 
 
-This vital preliminary step helps you gain a fundamental understanding of your model's characteristics and suitability, ultimately saving significant time and effort in later stages
+This vital preliminary step helps you gain a fundamental understanding of your model's characteristics and suitability, ultimately saving significant time and effort in later stages.
 
 Evaluate your model’s baseline performance based on your application target performance metrics.
 
