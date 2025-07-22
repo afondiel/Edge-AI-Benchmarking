@@ -1,6 +1,6 @@
 # Edge AI Benchmarking Guide
 
-This guide provides a practical, step-by-step workflow and essential resources for effectively benchmarking and profiling your Edge AI system. Quickly identify bottlenecks, address scalability challenges, and optimization uncover opportunities to enhance efficiency and accelerate performance.
+This guide provides a practical, step-by-step workflow and essential resources for effectively benchmarking and profiling your Edge AI system. Quickly identify bottlenecks, address scalability challenges, uncover optimization opportunities to enhance efficiency and accelerate performance.
 
 ## Table of Contents
 
