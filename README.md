@@ -166,9 +166,9 @@ Resources for model Deployment:
 
 - Credit: ([Link](https://www.youtube.com/watch?v=8Rr_8jy1_GY))
 
-Analyze the model’s runtime behavior to identify performance bottlenecks, resource usage (Computation workload, memory footprint, Energy consumption), and optimization opportunities.
+To identify performance bottlenecks, resource consumption (computation workload, memory footprint, energy consumption), and optimization opportunities, analyze the model’s runtime behavior.
 
-Use the profiling tools provided by your training/inference framework (Pytorch, Onnx runtime, LiteRT, NVIDIA TensorRT, ...)
+Leverage profiling tools integrated within your training/inference framework (e.g., PyTorch, ONNX Runtime, LiteRT, NVIDIA TensorRT), such as:
 - **[TensorFlow Lite Benchmark Tool](https://www.tensorflow.org/lite/performance/measurement)**: Measures latency and memory on mobile devices.
 - **[ONNX Runtime Profiler](https://onnxruntime.ai/)**: Profiles layer-wise performance.
 - **[NVIDIA Jetson Performance Tool (JTOP)](https://github.com/rbonghi/jetson_stats)**: Monitor and benchmark AI workloads on NVIDIA Jetson devices.
@@ -311,9 +311,9 @@ Depth counts the number of layers with parameters.
 
 Use tracing tool to [analyze](https://docs.pytorch.org/tutorials/intermediate/tensorboard_profiler_tutorial.html) your profiling results:
 
-- [TensorBoard (Standalone)](https://www.tensorflow.org/tensorboard)
-- [chrome://tracing/](chrome://tracing/)
 - [Perfetto](https://perfetto.dev/docs/)
+- [chrome://tracing/](chrome://tracing/)
+- [TensorBoard (Standalone)](https://www.tensorflow.org/tensorboard)
 
 
 ## Step 5: Optimize
@@ -322,9 +322,9 @@ Use tracing tool to [analyze](https://docs.pytorch.org/tutorials/intermediate/te
 
 Wang et al. "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies", arXiv pp, [arXiv:2501.03265v1](https://arxiv.org/abs/2501.03265), 2025
 
-After identifying performance bottlenecks, you can apply Edge AI SOTA optimizations technique from Data Pipeline, Model to System Architecture (Application) to meet the target success.
+After identifying performance bottlenecks, you can apply Edge AI SOTA optimization techniques across the data pipeline, model, and system architecture (as shown in image above) to meet your application goals.
 
-For example, if you decide to use Quantization, reducing the model precision from `FP32` to `INT8`, enabling reduce the memory footprint and speedup computation, you may endup with the following table.
+For example, if you decide to use quantization, reducing the model precision from `FP32` to `INT8` can reduce the memory footprint and speed up computation, potentially resulting in the following table.
 
 <table border="1">
   <thead>
