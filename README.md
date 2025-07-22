@@ -326,7 +326,7 @@ Use tracing tool to [analyze](https://docs.pytorch.org/tutorials/intermediate/te
 
 Wang et al. "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies", arXiv pp, [arXiv:2501.03265v1](https://arxiv.org/abs/2501.03265), 2025
 
-After identifying performance bottlenecks, you can apply Edge AI SOTA optimization techniques across the data pipeline, model, and system architecture (as shown in image above) to meet your application goals.
+After identifying performance bottlenecks, you can apply Edge AI SOTA optimization techniques across the data pipeline, model, and system architecture (as shown in diagram above) to meet your application goals.
 
 For example, if you decide to use quantization, reducing the model precision from `FP32` to `INT8` can reduce the memory footprint and speed up computation, potentially resulting in the following table.
 
