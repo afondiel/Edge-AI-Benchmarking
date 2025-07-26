@@ -134,7 +134,7 @@ def show_predictions(model):
 Selecting the right edge platform/device is crucial for the overall performance and efficiency of your application (computational demands, environmental conditions, operational constraints, etc.). Please refer to this [resource](https://github.com/afondiel/Edge-AI-Platforms) for more in depth.
 
 
-| **Target Device**                          | **CPU (%)**      | **AI Accelerator (GPU/NPU)[^1]**| **Compute (OPS)**  | **Speed (TOPS/s)[^2]**        | **Memory Footprint (RAM/VRAM)**|**Storage usage (SD card/Onboard Flash)**     |**Power (W)**    |**Energy (Wh/J)** |**Efficiency (GOPS/W)[^3]**  |**Temperature (°C)** |
+| **Target Device**                          | **CPU (%)**      | **AI Accelerator (GPU/NPU)[^2]**| **Compute (OPS)**  | **Speed (TOPS/s)[^3]**        | **Memory Footprint (RAM/VRAM)**|**Storage usage (SD card/Onboard Flash)**     |**Power (W)**    |**Energy (Wh/J)** |**Efficiency (GOPS/W)[^4]**  |**Temperature (°C)** |
 |:-------------------------------------------|:------------------:|:----------------------------:|:-----------------------:|:----------------------------:|:--------------------------:|:----------------------------------------:|:-----------------:|:-----------------:|:------------------:|:---------------------:|
 | **System on Chips (SoCs)**                 | -                    |  -                         | GFlops                | MHz/GHz                    | MB                       |-                                       |-             |-            |-            |°C                   |               
 | **Microcontrollers (MCUs)**                | -                    |  -                         | GFlops                | MHz                        | KB                       |-                                       |-             |-            |-            |°C                   | 
@@ -159,7 +159,7 @@ For instance, if you have a PyTorch model and are working on a [Raspberry Pi](ht
 
 The same principles apply to other engines like [LiteRT](https://ai.google.dev/edge/litert) or [TensorRT](https://github.com/NVIDIA/TensorRT).
 
-For further reading, please refer to the End-to-end Edge AI deployment stack resource[^4].
+For further reading, please refer to the End-to-end Edge AI deployment stack resource[^5].
 
 ## Step 4: Profile and Identify Bottlenecks
 
@@ -420,8 +420,12 @@ III. **Practical Steps for Optimization**
 
 ---
 
-- [^1]: [Edge AI Optimization Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/optimization)
-- [^1]: Onboard AI accelerator for high-performance workloads/Applications
-- [^2]: Measures the peak computational capacity (throughput) of an AI processor or SoC i.e., TOPS=2 x MACs x frequency/10^12
-- [^3]: Measures the computational operations (achieved during workload) per watt of power consumed
-- [^4]: [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
+[^1]: [Edge AI Optimization Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/optimization)
+
+[^2]: Onboard AI accelerator for high-performance workloads/Applications
+
+[^3]: Measures the peak computational capacity (throughput) of an AI processor or SoC i.e., TOPS=2 x MACs x frequency/10^12
+
+[^4]: Measures the computational operations (achieved during workload) per watt of power consumed
+
+[^5]: [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
