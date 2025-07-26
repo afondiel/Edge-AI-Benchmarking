@@ -13,6 +13,7 @@ This guide provides a practical, step-by-step workflow and essential resources f
    - [Step 5: Optimize](#step-5-optimize)
    - [Step 6: Iterate](#step-6-iterate)
 - [Resources](#resources)
+- [References](#references)
 
 ## Benchmarking Workflow
 
@@ -33,8 +34,10 @@ This guide provides a practical, step-by-step workflow and essential resources f
 > If the model is already running on your target edge device jump straight to the [step 4](#step-4-profile-and-identify-bottlenecks).
 
 ## Step 0: Select your Model
+> [!NOTICE]
+> At this stage, it's strongly recommended that your model be pre-optimized[^8] and ready to run on an Edge AI device.
 
-You have at least a model to begin with, ideally from [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo)
+Select your baseline model. If you don't have one, you can pick a pre-optimized model from [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo) to get started.
 
 ## Step 1: Prepare and Baseline the Model
 
@@ -143,9 +146,6 @@ Selecting the right edge platform/device is crucial for the overall performance 
 | **Industrial and Custom Edge Devices**     | -                    |  -                         | GFlops                | GHz                        | MB/GB                    |-                                       |-             |-            |-            |°C                   |
 | **Robotics-Focused Edge Devices**          | -                    |  -                         | GFlops                | GHz                        | MB/GB                    |-                                       |-             |-            |-            |°C                   |
 
-[^1]: Onboard AI accelerator for high-performance workloads/Applications
-[^2]: Measures the peak computational capacity (throughput) of an AI processor or SoC i.e., TOPS=2 x MACs x frequency/10^12
-[^3]: Measures the computational operations (achieved during workload) per watt of power consumed
 
 ### **Rule of Thumb**
 - **Small Devices (e.g., IoT sensors)**: Use the smallest model with acceptable accuracy.
@@ -420,3 +420,23 @@ III. **Practical Steps for Optimization**
 3. **Quantize Models**: Convert models to INT8 or lower precision to reduce size and computation.
 4. **Simulate Edge Scenarios**: Test models under realistic conditions (e.g., low power, intermittent connectivity).
 5. **Optimize Pipelines**: Employ pruning, knowledge distillation, or layer fusion to enhance performance.
+
+## References
+
+
+- [^1]: Onboard AI accelerator for high-performance workloads/Applications
+- [^2]: Measures the peak computational capacity (throughput) of an AI processor or SoC i.e., TOPS=2 x MACs x frequency/10^12
+- [^3]: Measures the computational operations (achieved during workload) per watt of power consumed
+- [^4]: [Edge AI Engineering](https://github.com/afondiel/edge-ai-engineering) 
+- [^5]: [Edge AI Technical Guide](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts)
+- [^6]: [Edge AI End-to-End Stack](https://www.qualcomm.com/developer/artificial-intelligence)
+- [^7]: [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
+- [^8]: [Edge AI Optimization Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/optimization)
+- [^9]: [Edge AI Frameworks](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/frameworks)
+- [^10]: [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo)
+- [^11]: [Edge AI Platforms](https://github.com/afondiel/Edge-AI-Platforms)
+- [^12]: [Edge AI Benchmarking](https://github.com/afondiel/Edge-AI-Benchmarking)
+- [^13]: [Edge AI Ecosystem](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/industry-applications)
+- [^14]: [Edge AI Books](https://github.com/afondiel/cs-books/blob/main/README.md#edge-computing)
+- [^15]: [Edge AI Blog](https://afondiel.github.io/posts/)
+- [^16]: [Edge AI Papers](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/resources/edge_ai_papers_news.md)
