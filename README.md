@@ -159,7 +159,7 @@ For instance, if you have a PyTorch model and are working on a [Raspberry Pi](ht
 
 The same principles apply to other engines like [LiteRT](https://ai.google.dev/edge/litert) or [TensorRT](https://github.com/NVIDIA/TensorRT).
 
-For further reading, please refer to the End-to-end Edge AI deployment stack resource [^7]
+For further reading, please refer to the End-to-end Edge AI deployment stack resource[^4].
 
 ## Step 4: Profile and Identify Bottlenecks
 
