@@ -13,7 +13,6 @@ This guide provides a practical, step-by-step workflow and essential resources f
    - [Step 5: Optimize](#step-5-optimize)
    - [Step 6: Iterate](#step-6-iterate)
 - [Resources](#resources)
-- [References](#references)
 
 ## Benchmarking Workflow
 
@@ -34,8 +33,8 @@ This guide provides a practical, step-by-step workflow and essential resources f
 > If the model is already running on your target edge device jump straight to the [step 4](#step-4-profile-and-identify-bottlenecks).
 
 ## Step 0: Select your Model
-> [!NOTICE]
-> At this stage, it's strongly recommended that your model be pre-optimized[^8] and ready to run on an Edge AI device.
+> [!WARNING]
+> At this stage, it's strongly recommended that your model be pre-optimized[^1] and ready to run on an Edge AI device.
 
 Select your baseline model. If you don't have one, you can pick a pre-optimized model from [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo) to get started.
 
@@ -154,15 +153,13 @@ Selecting the right edge platform/device is crucial for the overall performance 
 
 ## Step 3: Deploy
 
-Resources for model Deployment: 
-- [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
-- [Edge AI Optimization Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/optimization)
-- [Edge AI Frameworks](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/frameworks)
-- [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo)
-- [Edge AI Platforms](https://github.com/afondiel/Edge-AI-Platforms)
-- [Edge AI Ecosystem](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/industry-applications)
-- [Edge AI Blog](https://afondiel.github.io/posts/)
+Convert and compile your model for your target hardware platform's runtime. 
 
+For instance, if you have a PyTorch model and are working on a [Raspberry Pi](https://github.com/diesimo-ai/diesimo-lab/blob/main/README.md#hardware-platforms) you might choose [onnxruntime](https://github.com/microsoft/onnxruntime) as inference engine. This would involve converting/exporting your model to ONNX format (e.g., `your_model.onnx`).
+
+The same principles apply to other engines like [LiteRT](https://ai.google.dev/edge/litert) or [TensorRT](https://github.com/NVIDIA/TensorRT).
+
+For further reading, please refer to the End-to-end Edge AI deployment stack resource [^7]
 
 ## Step 4: Profile and Identify Bottlenecks
 
@@ -421,22 +418,10 @@ III. **Practical Steps for Optimization**
 4. **Simulate Edge Scenarios**: Test models under realistic conditions (e.g., low power, intermittent connectivity).
 5. **Optimize Pipelines**: Employ pruning, knowledge distillation, or layer fusion to enhance performance.
 
-## References
+---
 
-
+- [^1]: [Edge AI Optimization Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/optimization)
 - [^1]: Onboard AI accelerator for high-performance workloads/Applications
 - [^2]: Measures the peak computational capacity (throughput) of an AI processor or SoC i.e., TOPS=2 x MACs x frequency/10^12
 - [^3]: Measures the computational operations (achieved during workload) per watt of power consumed
-- [^4]: [Edge AI Engineering](https://github.com/afondiel/edge-ai-engineering) 
-- [^5]: [Edge AI Technical Guide](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts)
-- [^6]: [Edge AI End-to-End Stack](https://www.qualcomm.com/developer/artificial-intelligence)
-- [^7]: [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
-- [^8]: [Edge AI Optimization Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/optimization)
-- [^9]: [Edge AI Frameworks](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/frameworks)
-- [^10]: [Edge AI Model Zoos](https://github.com/afondiel/Edge-AI-Model-Zoo)
-- [^11]: [Edge AI Platforms](https://github.com/afondiel/Edge-AI-Platforms)
-- [^12]: [Edge AI Benchmarking](https://github.com/afondiel/Edge-AI-Benchmarking)
-- [^13]: [Edge AI Ecosystem](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/industry-applications)
-- [^14]: [Edge AI Books](https://github.com/afondiel/cs-books/blob/main/README.md#edge-computing)
-- [^15]: [Edge AI Blog](https://afondiel.github.io/posts/)
-- [^16]: [Edge AI Papers](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/resources/edge_ai_papers_news.md)
+- [^4]: [Edge AI Deployment Stack](https://github.com/afondiel/computer-science-notebook/tree/master/core/systems/edge-computing/edge-ai/concepts/deployment)
