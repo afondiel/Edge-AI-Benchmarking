@@ -56,7 +56,7 @@ Some examples of key metrics:
 
 Bench Table Template
 
-| **Model**       | **Task**               | **Accuracy** | **Latency (ms)** | **Model Size (MB)** |**Params Size (MB)** | **Compute Cost (GFLOPS)**         | **[Platform](#step-2-choose-your-target-edge-platform)**                         |
+| **Model**       | **Task**               | **Accuracy** | **Latency (ms)** | **Model Size (MB)** |**Params** | **Compute (GFLOPS)**         | **[Platform](#step-2-choose-your-target-edge-platform)**                         |
 |------------------|------------------------|--------------|------------------|---------------------|---------------------|----------------------|---------------------------------------|
 | MobileNet V2     | Image Classification  | 72.0%        | 25               | 4.3                 |3.5                 | XX    | Android, iOS, Web  |
 
