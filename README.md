@@ -1,6 +1,8 @@
 # Edge AI Benchmarking Guide
 
-This guide provides a practical, step-by-step workflow and essential resources for effectively benchmarking and profiling your Edge AI system. Quickly identify bottlenecks, address scalability challenges, uncover optimization opportunities to enhance efficiency and accelerate performance.
+This guide provides a practical, step-by-step workflow and essential resources for effectively benchmarking and profiling Edge AI systems.
+
+The goal is help you to quickly identify bottlenecks, address scalability challenges, uncover optimization opportunities to enhance efficiency and accelerate performance.
 
 ## Table of Contents
 
@@ -321,7 +323,7 @@ Use tracing tool to [analyze](https://docs.pytorch.org/tutorials/intermediate/te
 
 ![](https://github.com/afondiel/Edge-AI-Model-Zoo/blob/main/resources/edge-ai-opt-triad.png?raw=true)
 
-Wang et al. "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies", arXiv pp, [arXiv:2501.03265v1](https://arxiv.org/abs/2501.03265), 2025
+Wang et al. "Optimizing Edge AI: A Comprehensive Survey on Data, Model, and System Strategies", arXiv pp, [arXiv:2501.03265v1](https://arxiv.org/html/2501.03265v1), 2025
 
 After identifying performance bottlenecks, you can apply Edge AI SOTA optimization techniques across the data pipeline, model, and system architecture (as shown in diagram above) to meet your application goals.
 
